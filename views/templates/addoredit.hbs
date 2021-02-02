@@ -1,0 +1,41 @@
+<h1>add page</h1>
+{{!-- <input type="button" name="add" value="add"> --}}
+<form action="/employee" method="POST" enctype="multipart/form-data"> 
+<input type="hidden" name="_id" value="{{emp._id}}">
+
+    <td>
+        <div>
+            <tr>
+                <input type="text" name="name" placeholder="name" value="{{emp.name}}">
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <input type="number" name="mobile" placeholder="number" value="{{emp.mobile}}">
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <input type="text" name="city" placeholder="city" value="{{emp.city}}">
+               
+            </tr>
+        </div>
+         <div>
+            <tr>
+                <input type="file" name="img" value="{{emp.image}}">
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <input type="submit">
+            </tr>
+        </div>
+         <div>
+            <tr>
+    
+            </tr>
+        </div>
+        <a href="employeelist">view</a>
+    </td>
+    
+</form>

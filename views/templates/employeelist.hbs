@@ -1,0 +1,27 @@
+<h1>list</h1>
+<a href="addoredit"><h1>add</h1></a>
+<table>
+<thead>
+    <tr>
+        <th>name</th>
+        <th>number</th>
+        <th>city</th>
+        <th>image</th>
+        <th>edits</th>
+    </tr>
+</thead>
+<tbody>
+    {{#each list}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.mobile}}</td>
+        <td>{{this.city}}</td>
+        <td><img src="./uploads/{{this.image}}" width="80" height="100" alt="img"></td>
+        <td>
+            <a href="{{this._id}}">edit</a>
+            <a href="delete/{{this._id}}" onclick="return confirm('are u sure to delete?');">delete</a>
+        </td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
